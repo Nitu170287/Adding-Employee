@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Employees</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body onload="showUser()">
+    <!-- Header part --input for employee info -->
+    <h2>New Employees</h2>
+    <div id="input-container">
+        <div class="name">
+            <p id="name-para">Enter Name</p>
+            <input type="text" id="name-input"/>
+        </div>
+        
+        <div class="profession">
+            <p id="profession-para">Enter Profession</p>
+            <input type="text" id="profession-input"/>
+        </div>
+        
+        <div class="age">
+            <p id="age-para">Enter Age</p>
+        <input type="number" id="age-input"/>
+        </div>
+
+    </div>
+    <button id="add-user-btn" onclick="addUser()">Add User</button>
+</div>
+</div>
+
+<!-- middle part shows to display error--employee not added  or success--employee added -->
+
+<div class="display-msg">
+    <!-- <p style="color:red;">Error : Please Make sure All the fields are filled before adding in an employee !</p>
+    <p style="color:green;">Success : Employee Added!</p> -->
+</div>
+
+
+
+<div class="employee-added display-msg">
+    <p>Added Employees</p>
+</div>
+
+<div class="zero-employee display-msg">
+    <p id="epmloyee-count" style="color:#706f6f;">You have 0 Employees.</p>
+</div>
+
+<!-- bottom part shows the aaded employees info -->
+
+<div id="usercontainer">
+    
+    <!-- <div class="user-info">
+        <div id="user1" class="User">
+            <div>1.</div>
+            <div>Name:John</div>
+            <div>Profession:Developer</div>
+            <div>Age:18</div>
+        </div>
+        <div>
+            <button class="delete-btn">Delete User</button>
+        </div>
+    </div>
+    
+    <div class="user-info">
+        <div id="user2" class="User">
+            <div>1.</div>
+            <div>Name:John</div>
+            <div>Profession:Developer</div>
+            <div>Age:18</div>
+        </div>
+        <div>
+            <button class="delete-btn">Delete User</button>
+        </div>
+    </div>
+    
+    <div class="user-info">
+        <div id="user3" class="User">
+            <div>1.</div>
+            <div>Name:John</div>
+            <div>Profession:Developer</div>
+            <div>Age:18</div>
+        </div>
+        <div>
+            <button class="delete-btn">Delete User</button>
+        </div>
+    </div> -->
+    
+</div> 
+<script src="./script.js"></script>
+</body>
+</html>
